@@ -1,0 +1,16 @@
+<hr>:创建水平线分割文本
+
+<!—注释内容-->：注释的基本文本格式
+
+<h1>:一级标题。
+
+<body bgcolor="yellow">：body标签中添加bgcolor的格式
+
+<h1 align="center">This is heading 1</h1>: 据中显示
+
+<br /> 也是更长远的保障
+
+下标:<sub>标签
+
+RGB：#FFFFFF，可使用调色板，十六进制的表示方式
+
