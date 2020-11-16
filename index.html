@@ -1,113 +1,146 @@
-<html lang="zh-CN">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>网页</title>
-    <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <style type="text/css">
+        .top{
+            height: 10%; 
+            width: 33%;
+            margin-left: 0;
+            background:rgb(162, 209, 211);
+            position: fixed; 
+            top: 0;
+            margin-bottom: 50px;
+        }
+        .top ul{
+            width: 200;
+            list-style-type:circle;
+            white-space:nowrap;
+            overflow: hidden;
+            margin-left: 5%;
+            margin-top: 0;         
+            padding: 0;
+
+        }
+        .top li {
+            float:left; 
+            margin-right:4%;  
+            position: relative;
+            overflow: hidden;
+        }   
+
+        .top li a{
+            display: block; 
+            color:rgb(109, 105, 105);
+            text-align: center;
+            padding: 20px;
+            overflow: hidden;
+            text-decoration: none; 
+            
+        }
+        .top li a:hover{
+            background-color: rgb(87, 154, 209);
+        }
+       
         body {
-            background-image: url(back.jpg);
+            background-image: url(./image/home.png);    
             background-repeat: no-repeat;
             background-size: 100%;
         }
-        
-        div {
-            font-size: large;
-            font-size: bold;
-            color: rgb(158, 229, 238);
+        .ztstyle{
+            font-weight :bold;
+            font-size :large;
+            font-size: 75px;
+            font-family: STCaiyun;
+            color: rgb(43, 145, 235);
+            text-align:center;
+        }
+        .container{
+            width: 540px;
+            margin:0 auto;
+        }
+        #first{
+            height: 200px;
+            width: 200px;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-position: center center;
+            float: left;
+        }
+        #second{
+            height: 200px;
+            width: 140px;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-position: center center;
+            float: left;
+        }
+        #third{
+            height: 200px;
+            width: 140px;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-position: center center;
+            float: left;
+        }
+        div img {
+            max-width: 198px;
+            max-height: 198px;
+        }
+        .zt{
+            font-weight :bold;
+            font-size :large;
+            font-size: 40px;
+            font-family: STCaiyun;
+            color: rgb(255, 255, 255);
+            text-align:center;
         }
         
-        img {
-            max-width: 20%;
-            height: 20%;
-        }
-        <!--表格内容居中显示-->                            
-        table{
-            text-align: center;     
-        }                    
+        
     </style>
-                    
-
+</head>
 <body>
-    <audio src="xiaobai.mp3" autoplay="autoplay" preload="auto" controls="controls"></audio>  <!--添加音乐-->
-    <p>
-        <b>                       
-        <u>
-        <font color=white>        <!--将字体变成白色的设置（默认黑色）-->
-            谢泽欣个人主页
-        </font>
-        </u>
-        </b>
-    </p>
-    <!--关于字体的设置见下方缩略:-->
-    <!--
-    
-            <B>　　　　　</B>　　　　　粗体　　　　　　　　　　　　　　HTML语言
-
-        <I>　　　　　</I>　　　　　斜体　　　　　　　　　　　　　　HTML语言
-
-        <U>　　　　　</U>　　　　　加下划线　　　　　　　　　　　　HTML语言
-
-        <TT>　　　　 <TT>　　　　　打字机字体　　　　　　　　　　　HTML语言
-
-        <BIG>　　　　</BIG>　　　　大型字体　　　　　　　　　　　　HTML语言
-
-        <SMALL>　　　</SMALL>　　　小型字体　　　　　　　　　　　　HTML语言
-
-        <BLINK>　　　</BLINK>　　　闪烁效果　　　　　　　　　　　　HTML语言
-
-        <EM>　　　　 </EM> 　　　　表示强调，一般为斜体　　　　　　HTML语言
-
-        <STRONG>　　 </STRONG>　　 表示特别强调，一般为粗体　　　　HTML语言
-
-        <CITE>　　　 </CITE>　　　 用于引证、举例，一般为斜体　　　HTML语言
-        
-        -->
-
-    <p>   <!--关于个人信息-->
-        <font color=white>
-            个人信息 班级：
-            <br>软件工程2003
-            <br>学号：8209200307
-        </font>
-
-    </p>
-
-    <p>
-        <font color=white>
-            个人微信名片二维码：
-            <br><img src="namecard.jpg" alt='本人二维码'>   <!--添加图片，注意src的拼写-->
-        </font>
-    </p>
-    <!--插入链接-->
-    <p>
-        <a href="https://user.qzone.qq.com/1615504991/main" >   <!--插入外部链接-->
-        <font color=white>        
-            个人空间
-        </font>    
-        </a>
-    </p>
-    <!--插入表格-->
-    <table border="1" width="100" height="40" cellpadding = "8" cellspacing = "0">    <!--注意变量的先后顺序-->
-                                                     <!--cellpadding为空白部分大小，cellspacing为表格边框大小-->
-        <caption>啊吧啊吧</caption>                   <!--标题-->
+    <div class="top" >
+        <center> 
+        <ul>
+        <li><a href="./html/详情页.html" target="_blank">个人信息详情</a></li>
+        <li><a href="./html/课程表.html" target="_blank">课程表</a></li>
+        <li><a href="./html/好康的.html" target="_blank">美图资源</a></li>
+        </ul>
+        </center>      
+     </div>
+    <div class="ztstyle">
+        <p>Hi,欢迎来到xzx的主页</p>
+    </div>
+    <table align="center">
         <tr>
-            <td>性别</td>  
-            <td>婚姻情况</td>
-            
+            <td>
+                <div class="container">
+                    <div id="first" >
+                        <img src="./image/真心.jpg" width="100%" title="不知火">
+                    </div>
+                    <div id="second">
+                        <img src="./image/豆子.png" title="祢豆子">
+                    </div>
+                    <div id="third">
+                        <img src="./image/rem.jpg" title="雷姆！！！！！">
+                    </div>
+                </div>
+            </td>
         </tr>
         <tr>
-            <td>男</td>
-            <td>未婚</td>
-            
+            <td align="center" class="zt">
+                <div>
+                    <p>介绍一下，这是老婆们，不接受反驳</p>
+                </div>
+            </td>
         </tr>
-        <!--关于换行：①rowspan 合并列，数值表示跨几行
-        ② colspan 合并行的单元格，数值表示跨几列-->
-
     </table>
+        
     
-
-
-
-
+    
+    
 </body>
-
 </html>
